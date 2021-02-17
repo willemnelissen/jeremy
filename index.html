@@ -1,12 +1,13 @@
 
 <script>
 
-   function showNotification() {
-   const notification = new Notification("New message incoming", {
-      body: "Hi IT Team. can you please implement this?",
-      //icon: "yourimageurl.png"
-   })
-}
+  function showNotification() {
+  const notification = new Notification("New message incoming", {
+    body: "Hi IT Team. can you please implement this?",
+    //icon: "yourimageurl.png"
+    })
+  }
+  
 	window.addEventListener('load', (event) => {
 	  console.log(Notification.permission);
       if (Notification.permission === "granted") {
@@ -17,7 +18,7 @@
       });
     }
 	
-    showNotification( )
-	});
+    showNotification()
+});
 	
 </script>
